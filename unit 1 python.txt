@@ -70,13 +70,12 @@ num = int(input("Enter a number: "))
 print("The factorial of", num, "is", factorial(num))
 
 9.ans:
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-num = int(input("Enter a number: "))
-print("Factorial of", num, "is", factorial(num))
+import math
+
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * radius ** 2
+print(f"The area of the circle with radius {radius} is {area:.2f}")
+
 
 10.ans:
 def convert_to_uppercase(input_string):
