@@ -1,0 +1,182 @@
+1. ans:
+print("Hello,world!");
+
+2.ans:
+integer_var=42
+float_var=2.93
+Boolean_var=True
+string_var="Hello,world!"
+list_var=[1,2,3,4,5]
+print("Integer:",integer_var)
+print("float:",float_var)
+print("Boolean:",Boolean_var)
+print("String:",string_var)
+print("list_var:",list_var)
+
+3.ans:
+num1=15
+num2=21
+result = num1 + num2
+print("The result of adding", num1, "and", num2, "is:", result)
+
+4.ans:
+a, b, c =3,4,2
+
+print("Values after god assignment:")
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+result = 3 +4 * 2
+
+print("\nResult of the expression 4 + 3 * 2 (with operator precedence):")
+print("(4 + 3)* 2 =", result)
+
+result_with_parentheses = (4 + 3) * 2
+
+print("\nResult of the expression (4 + 3) * 2 (changing operator ):")
+print("(4 + 3) * 2 =", result_with_parentheses)
+
+5.ans:
+import math
+number=15
+square_root=math.sqrt(number)
+print("The square root of",number,"is",square_root)
+
+6.ans:
+def add_two_numbers(a, b):
+    return a + b
+result = add_two_numbers(3, 5)
+print(result) 
+
+7.ans:
+def check_even_or_odd(number):
+    if number % 2 == 0:
+        return "The number is even."
+    else:
+        return "The number is odd."
+
+number_to_check = 8
+result = check_even_or_odd(number_to_check)
+print(result)  
+
+8.ans:
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+num = int(input("Enter a number: "))
+print("The factorial of", num, "is", factorial(num))
+
+9.ans:
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+num = int(input("Enter a number: "))
+print("Factorial of", num, "is", factorial(num))
+
+10.ans:
+def convert_to_uppercase(input_string):
+    """
+    Convert a string to uppercase.
+
+    Args:
+        input_string (str): The string to be converted to uppercase.
+
+    Returns:
+        str: The input string converted to uppercase.
+    """
+    return input_string.upper()
+
+input_str = input("Enter a string: ")
+uppercase_str = convert_to_uppercase(input_str)
+print("Uppercase string:", uppercase_str)
+
+11.ans:
+print("Using a for loop:")
+for i in range(1, 20):
+    print(i)
+    
+print("\nUsing a while loop:")
+num = 1
+while num <= 10:
+    print(num)
+    num += 1
+
+12.ans:
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+celsius_temp = float(input("Enter temperature in Celsius: "))
+fahrenheit_temp = celsius_to_fahrenheit(celsius_temp)
+print("Temperature in Fahrenheit:", fahrenheit_temp)
+
+13.ans:
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers) if len(numbers) > 0 else 0
+
+num_list = [10, 20, 30, 40, 50]
+average = calculate_average(num_list)
+print("Average:", average)
+
+14.ans:
+import random
+random_number = random.randint(1, 100)
+
+print("Random number between 1 and 100:", random_number)
+
+15.ans:
+first_name = "itachi"
+last_name = "uchiha "
+
+full_name = first_name + " " + last_name
+
+print("Full Name:", full_name)
+
+16.ans:
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+result = num1 * num2
+
+print("The multiplication of", num1, "and", num2, "is", result)
+
+17.ans:
+def max_of_three(num1, num2, num3):
+    return max(num1, num2, num3)
+
+print(max_of_three(5, 9, 3))  
+
+18.ans:
+people = {
+    "Alice": 30,
+    "Bob": 25,
+    "Charlie": 35
+}
+for name, age in people.items():
+    print(f"{name} is {age} years old.")
+
+19.ans:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print("Original list:", numbers)
+sublist = numbers[2:5]
+print("Sublist from index 2 to 5 (exclusive):", sublist)
+sublist = numbers[:6]
+print("Sublist from beginning to index 6 (exclusive):", sublist)
+sublist = numbers[3:]
+print("Sublist from index 3 to the end:", sublist)
+sublist = numbers[::2]
+print("Every second element:", sublist)
+
+sublist = numbers[::-1]
+print("Reversed list:", sublist)
+
+20.ans:
+input_string = input("Enter a string: ")
+reversed_string = input_string[::-1]
+print("Reversed string:", reversed_string)
+
